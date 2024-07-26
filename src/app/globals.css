@@ -1,26 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "../tailwind/component.css";
+
+@import "tailwindcss/utilities";
 
 @layer base {
+  :root {
+    --color-primary: theme("colors.primary");
+    --color-secondary: theme("colors.secondary");
+    --color-white: theme("colors.white");
+    --color-black: theme("colors.black");
+    --color-gray: theme("colors.gray");
+    --color-success: theme("colors.success");
+    --color-warning: theme("colors.warning");
+    --color-error: theme("colors.error");
+    --color-info: theme("colors.info");
+    --color-content: theme("colors.content");
+    --color-base-500: theme("colors.base-500");
+    --color-base-600: theme("colors.base-600");
+    --color-base-700: theme("colors.base-700");
+    --color-base-800: theme("colors.base-800");
+    --color-base-900: theme("colors.base-900");
+  }
   html,
   body {
     font-family: var(--font-oswald);
-  }
-  :root {
-    --primary-color: themes("primary");
-    --secondary-color: themes("secondary");
-    --white-color: themes("white");
-    --black-color: themes("black");
-    --gray-color: themes("gray");
-    --success-color: themes("success");
-    --warning-color: themes("warning");
-    --error-color: themes("error");
-    --info-color: themes("info");
-    --base-500: themes("base-500");
-    --base-600: themes("base-600");
-    --base-700: themes("base-700");
-    --base-800: themes("base-800");
-    --base-900: themes("base-900");
+    background-color: var(--color-base-900);
+    color: var(--color-content);
   }
 }
