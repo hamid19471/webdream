@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export const colors: Record<string, string> = {
+  current: "currentColor",
   primary: "#2761BA",
   secondary: "#6699E7",
   white: "#FFFFFF",
@@ -11,6 +12,7 @@ export const colors: Record<string, string> = {
   warning: "#F0AD4E",
   error: "#D9534F",
   info: "#5BC0DE",
+  content: "#A6ADBB",
   "base-500": "#7E7E7E",
   "base-600": "#5E5E5E",
   "base-700": "#3D3D3D",
@@ -25,11 +27,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    container: {
-      center: true,
-    },
     colors: colors,
     extend: {
+      container: {
+        center: true,
+      },
+      maxWidth: {
+        wd: "1440px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
