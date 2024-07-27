@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(true);
   return (
     <>
-      <div className="hidden lg:flex container items-center justify-between gap-4">
+      <div className="hidden z-40 lg:flex container items-center justify-between gap-4">
         <Image
           src={"/images/logo.png"}
           alt="webdream Studio"
@@ -18,12 +18,16 @@ export const Header: React.FC = () => {
         />
         <Navigation />
         <div className="hidden lg:block">
-          <Button variant="primary" className="uppercase tracking-wide">
+          <Button
+            variant="base"
+            size="small"
+            className="uppercase tracking-wide"
+          >
             Free consultaion
           </Button>
         </div>
       </div>
-      <div className="lg:hidden flex items-center container justify-between gap-2 px-4">
+      <div className="lg:hidden z-40 flex items-center container justify-between gap-2 px-4">
         <Image
           src={"/images/logo.png"}
           alt="webdream Studio"
@@ -31,7 +35,11 @@ export const Header: React.FC = () => {
           height={110}
         />
         <div>
-          <Button variant="primary" className="uppercase tracking-wide">
+          <Button
+            variant="base"
+            size="small"
+            className="uppercase tracking-wide"
+          >
             Free Consultation
           </Button>
         </div>
@@ -43,7 +51,7 @@ export const Header: React.FC = () => {
           </div>
         </div>
         <div
-          className="fixed bottom-0 right-0 mb-4 mr-4"
+          className="fixed bottom-0 right-0 mb-4 mr-4 cursor-pointer"
           onClick={() => setOpen(!open)}
         >
           <Image
@@ -51,7 +59,7 @@ export const Header: React.FC = () => {
             alt=""
             width={30}
             height={30}
-            className="bg-info p-1 rounded-full"
+            className="bg-primary p-1 rounded-full"
           />
         </div>
       </div>
