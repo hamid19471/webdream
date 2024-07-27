@@ -5,7 +5,7 @@ const tabs = [
     title: "Product",
     value: "product",
     content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-primary to-info">
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
         <p>Product Tab</p>
       </div>
     ),
@@ -23,7 +23,7 @@ const tabs = [
     title: "Playground",
     value: "playground",
     content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
         <p>Playground tab</p>
       </div>
     ),
@@ -32,7 +32,7 @@ const tabs = [
     title: "Content",
     value: "content",
     content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
         <p>Content tab</p>
       </div>
     ),
@@ -41,7 +41,7 @@ const tabs = [
     title: "Random",
     value: "random",
     content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
         <p>Random tab</p>
       </div>
     ),
@@ -58,7 +58,7 @@ export const ServicesSection: React.FC = () => {
             we work with
           </h2>
         </div>
-        <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+        <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mt-16 mb-48">
           <Tabs tabs={tabs} />
         </div>
       </div>
