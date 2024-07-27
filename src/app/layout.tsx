@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${oswald.variable}`}>
-      <body className="grid min-h-screen grid-rows-[90px_1fr_auto]">
+      <body className="grid min-h-screen grid-rows-[90px_1fr_auto] md:px-4">
         <Header />
         {children}
         <Footer />
