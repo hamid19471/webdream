@@ -2,7 +2,8 @@ import type { Config } from "tailwindcss";
 
 export const colors: Record<string, string> = {
   current: "currentColor",
-  primary: "#2761BA",
+  // primary: "#2761BA",
+  primary: "#FFBD7A",
   secondary: "#6699E7",
   white: "#FFFFFF",
   black: "#000000",
@@ -29,6 +30,16 @@ const config: Config = {
   theme: {
     colors: colors,
     extend: {
+      animation: {
+        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+      },
+      keyframes: {
+        "border-beam": {
+          "100%": {
+            "offset-distance": "100%",
+          },
+        },
+      },
       container: {
         center: true,
       },
@@ -36,9 +47,7 @@ const config: Config = {
         wd: "1440px",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home-image": "url('/images/home.webp')",
       },
     },
   },
