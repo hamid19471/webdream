@@ -4,4 +4,5 @@ export type Variant =
   | "info"
   | "success"
   | "warning"
+  | "base"
   | "error";

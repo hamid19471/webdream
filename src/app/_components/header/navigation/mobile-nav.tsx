@@ -17,14 +17,14 @@ export const MobileNav: React.FC<Props> = ({ setOpen }) => {
   }, [pathname, setOpen]);
   return (
     <>
-      <div className="flex items-center justify-center gap-6 bg-black border-base-500 rounded-full py-6 px-12">
+      <div className="flex items-center justify-center gap-6 bg-base-800 border-base-500 rounded-full py-6 px-12">
         {MainNav.map((item) => {
           const isActive = item.href === pathname;
           return (
             <Link
               key={`mobile-nav-${item.title}`}
               href={item.href}
-              className={`${isActive && "text-info scale-110"}`}
+              className={`${isActive && "text-primary scale-110"}`}
             >
               {item.title}
             </Link>
