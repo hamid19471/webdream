@@ -7,7 +7,7 @@ const tabs: TabsItems[] = [
     value: "CMS",
     content: (
       <div className="w-full overflow-hidden relative h-max xl:h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
-        <h3>Most Popular CMS</h3>
+        <h3>CMS development & maintenance</h3>
         <p className="font-light text-lg text-content my-8">
           Our company specializes in the design and development of
           high-performance websites using popular CMS platforms such as
@@ -49,11 +49,11 @@ const tabs: TabsItems[] = [
     ),
   },
   {
-    title: "Front end",
-    value: "Front end",
+    title: "Front-end",
+    value: "Front-end",
     content: (
       <div className="w-full overflow-hidden relative h-max xl:h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
-        <h3>Front end</h3>
+        <h3>Front-end Services</h3>
         <p className="font-light text-lg text-content my-8">
           Our front-end development services focus on creating dynamic,
           responsive, and visually appealing user interfaces using cutting-edge
@@ -82,11 +82,11 @@ const tabs: TabsItems[] = [
     ),
   },
   {
-    title: "Backend",
-    value: "Backend",
+    title: "Back-end",
+    value: "Back-end",
     content: (
       <div className="w-full overflow-hidden relative h-max xl:h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
-        <h3>Back end</h3>
+        <h3>Back-end services</h3>
         <p className="font-light text-lg text-content my-8">
           Our back-end development services are designed to build robust,
           scalable, and secure server-side solutions. We utilize powerful
@@ -103,6 +103,48 @@ const tabs: TabsItems[] = [
           <Image src={"/icons/php.svg"} alt="HTML" width={50} height={50} />
           <Image src={"/icons/laravel.svg"} alt="HTML" width={50} height={50} />
           <Image src={"/icons/ruby.svg"} alt="HTML" width={50} height={50} />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "UI/UX Design",
+    value: "UI/UX Design",
+    content: (
+      <div className="w-full overflow-hidden relative h-max xl:h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-b from-black to-black border border-primary/40">
+        <h3>UI/UX Design</h3>
+        <p className="font-light text-lg text-content my-8">
+          Our UI/UX design services focus on creating intuitive, user-friendly
+          interfaces that enhance the overall user experience. We collaborate
+          with our clients to understand their needs, target audience, and
+          design a solution that meets their specific goals. Our team creates
+          designs that are visually appealing, easy to use, and optimized for
+          mobile devices. Our process is iterative, starting with user research
+          and guiding our design team through the development process. We
+          collaborate closely with our clients to ensure that our designs are
+          tailored to their specific needs and goals, ensuring that they
+          accurately represent their brand identity.
+        </p>
+        <div className="flex gap-5 items-center justify-between mt-12 px-28">
+          <Image src={"/icons/figma.svg"} alt="HTML" width={50} height={50} />
+          <Image
+            src={"/icons/adobe-xd.svg"}
+            alt="HTML"
+            width={50}
+            height={50}
+          />
+          <Image
+            src={"/icons/adobe-photoshop.svg"}
+            alt="HTML"
+            width={50}
+            height={50}
+          />
+          <Image
+            src={"/icons/adobe-illustrator.svg"}
+            alt="HTML"
+            width={50}
+            height={50}
+          />
         </div>
       </div>
     ),
