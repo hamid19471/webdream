@@ -5,7 +5,7 @@ import { BorderAnimation } from "../border-animation/border-animation";
 export const Footer: React.FC = () => {
   return (
     <div className="w-full px-2 overflow-hidden">
-      <div className="relative container bg-black border border-primary/20 rounded-xl py-12 px-8 grid grid-cols-1 xl:grid-cols-3 items-start gap-4 mb-8">
+      <div className="relative container bg-black border border-primary/20 rounded-xl py-12 px-8 grid grid-cols-1 lg:grid-cols-3 items-start gap-4 mb-8">
         <BorderAnimation size={190} duration={18} />
         <div className=" lg:w-[300px] flex flex-col gap-6">
           <Image
