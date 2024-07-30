@@ -30,7 +30,7 @@ const slugs = [
 export const AboutSection: React.FC = () => {
   return (
     <div className="mb-32 px-4">
-      <div className="container flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div className="container flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="flex flex-col gap-4 flex-1 w-full">
           <div>
             <h3 className="font-light text-xl uppercase leading-9 text-center lg:text-left">
@@ -40,7 +40,7 @@ export const AboutSection: React.FC = () => {
               Who We Are?
             </h2>
           </div>
-          <p className="leading-7 tracking-wide text-lg lg:text-justify text-center pr-0 lg:pr-24 ">
+          <p className="leading-7 tracking-wide text-lg font-light lg:text-justify text-center pr-0 lg:pr-24 ">
             At Webdream Studio, we specialize in delivering top-tier technology
             solutions tailored to your business needs. With over a decade of
             experience, we have partnered with companies and individuals
