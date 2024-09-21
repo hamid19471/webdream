@@ -3,6 +3,7 @@ import { Oswald } from "next/font/google";
 import "./globals.css";
 import { Header } from "./_components/header";
 import { Footer } from "./_components/footer";
+import NextTopLoader from "nextjs-toploader";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${oswald.variable}`}>
+      <NextTopLoader showSpinner={false} color="var(--color-primary)" />
       <body className="grid min-h-screen grid-rows-[90px_1fr_auto] md:px-4">
         <Header />
         {children}
