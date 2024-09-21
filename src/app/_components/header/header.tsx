@@ -4,18 +4,21 @@ import { Navigation } from "./navigation/navigation";
 import { MobileNav } from "./navigation/mobile-nav";
 import { useState } from "react";
 import { Button } from "../button";
+import Link from "next/link";
 
 export const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(true);
   return (
     <>
       <div className="hidden z-40 lg:flex container items-center justify-between gap-4">
-        <Image
-          src={"/images/logo.png"}
-          alt="webdream Studio"
-          width={120}
-          height={120}
-        />
+        <Link href={"/"}>
+          <Image
+            src={"/images/logo.png"}
+            alt="webdream Studio"
+            width={120}
+            height={120}
+          />
+        </Link>
         <Navigation />
         <div className="hidden lg:block">
           <Button
